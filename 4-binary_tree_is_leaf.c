@@ -10,15 +10,16 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 {
 	int is_leaf;
 
-	is_leaf =0;
+	is_leaf = 0;
 	while (node != NULL)
 	{
-		if (node->left == NULL && node ->right == NULL)
+		if (node->left == NULL && node->right == NULL)
 		{
-			is_leaf =1;
+			is_leaf = 1;
 		}
 		break;
 	}
 
 	return (is_leaf);
 }
+
